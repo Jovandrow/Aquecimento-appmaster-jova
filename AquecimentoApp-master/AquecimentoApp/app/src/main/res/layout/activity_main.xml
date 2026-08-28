@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Exercício 1, 2, 3 e 4: Button com id, listener de clique e largura match_parent -->
+    <Button
+        android:id="@+id/btnTeste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clique aqui" />
+
+    <!-- Exercício 5: CheckBox e Switch -->
+    <CheckBox
+        android:id="@+id/checkTeste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Marcar opção" />
+
+    <Switch
+        android:id="@+id/switchTeste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ativar" />
+
+    <!-- Exercício 6: SeekBar com max 10 -->
+    <SeekBar
+        android:id="@+id/seekTeste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="10" />
+
+    <!-- Novo: TextView de status que reflete o estado dos controles acima -->
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Status: aguardando interação..."
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
